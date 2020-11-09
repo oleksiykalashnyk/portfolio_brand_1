@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+h1.main_text {
+    font-family: 'Kaushan Script', cursive;
+    color: #ece7db;
+    font-size: 5rem;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.maim_block>button {
+    padding: 10px;
+    background-color: #ece7db;
+    border: none;
+    border-radius: 15px;
+    width: 120px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.bg {
+    background-image: url("bg.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.topnavLogo {
+    height: 50px;
+    padding-top: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.topnavLogo a {
+    display: block;
+    color: #2c2728;
+    text-align: center;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo_mini {
+    display: block;
+
+    font-size: 1rem;
+}
+
+.topnav {
+    height: 50px;
+    padding-top: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.topnav a {
+    display: block;
+    color: #564d50;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    border-bottom: 3px solid #564d50;
+}
+
+
+.topnav .icon {
+    display: none;
+}
+
+.footer>a>p {
+    color: #fff;
+    margin-bottom: 5px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.footer>a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.maim_block {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer>a>img {
+    height: 60px;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 656px) {
+    .logo_mini {
+        display: none;
+    }
+
+    .topnav .icon {
+        display: block;
+    }
+
+    .topnav>a {
+        display: none;
+    }
+
+    h1.main_text {
+        font-size: 2rem;
+    }
+
+    .topnavLogo a.logo_mini {
+        display: none;
+    }
+
+    .topnavLogo a {
+        font-size: 1.3rem;
+
+    }
+
+    .topnavLogo{
+        padding-top: 10px;
+    }
+    .topnav{
+        padding-top: 10px;
+    }
+}
+
+
+@media screen and (min-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+
+.overlay {
+      
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.9); 
+    overflow-x: hidden; 
+    transition: 0.5s; 
+  }
+  
+
+  .overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
+  }
+  
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; 
+    transition: 0.3s; 
+  }
+  
+
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
